@@ -1,0 +1,202 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+   }
+ 
+.nav__responsive-ul{
+    display: none;
+   }
+
+.nav{
+    background-color: rgb(138, 186, 241);
+   }
+
+.nav__li{
+    display: inline-block;
+    padding: 13px;
+   }
+
+.nav__li:hover > a {
+    color:rgb(17, 73, 138);
+   }
+
+.nav__li:hover{
+    color:rgb(17, 73, 138);
+   }
+
+.nav__li a {
+    color: rgb(10, 26, 45);
+    text-decoration: none;
+    /*font-size: 17px;*/
+   }
+
+.nav__li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+   }
+
+.nav__responsive-button-container{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color:rgb(82, 129, 185) ;
+    margin-top: -64px;
+    z-index: 100;
+   }
+
+.nav__responsive-button{
+   padding: 6px 20px;
+   text-align: right;
+   width: 100%;
+  
+}
+/* Menu responsive para cuando se achica la pantalla*/
+ @media only screen and (max-width: 542px){
+    .nav__ul{
+        display: none;
+    }
+  
+    .nav{
+        height: 37px;
+        width: 100%;
+       
+    }
+
+    .nav__responsive-ul{
+      display: block;
+      position: absolute;
+      width: 100%;
+      background: rgb(255, 255, 255); 
+      margin-top:37px ;
+      padding-top: 27px;
+      height: 37px;
+    }
+
+    .nav__li-container{
+      position: relative;
+      top: -1000px;
+      height: calc(100vh - 64px);
+      background: rgb(125, 172, 226); 
+      transition: all 1s;
+      z-index: 1;
+      width: 75%;
+      padding-top: 27px;
+   }
+
+    .nav__responsive-li {
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .nav__responsive-li i {
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color:rgb(94, 134, 179); 
+
+    }
+
+    .nav__responsive-li a{
+      color:  rgb(0, 0, 0);
+      text-decoration: none;
+    }
+
+    /*.nav__responsive-li:hover > a {
+      color:rgb(17, 73, 138);
+   }
+
+    .nav__responsive-li:hover{
+      color:rgb(17, 73, 138);
+   }*/
+   .nav__responsive-ul:hover > .nav__li-container {
+      top:-25px;
+   }
+
+   
+ }
+
+ /*Email de "contactate"*/
+ .flex-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background:rgb(154, 194, 239); 
+    margin: 50px 50px;
+    padding: 20px;
+    border: 14px solid  rgb(255, 255, 255);
+    outline: 3px solid rgb(27, 57, 93);
+ } 
+
+ .form{
+    min-width:400px;
+    flex: 1;
+    text-align: center;
+    padding:30px;
+    order: 5;
+ }
+
+ .form__input{
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid rgb(27, 57, 93);
+    background: transparent;
+ }
+
+ .form__input:focus{
+    background:linear-gradient(to bottom, transparent,rgb(196, 215, 237) ) ;
+    outline: none;
+    border-bottom:3px solid rgb(17, 42, 72);
+ }
+
+ .form textarea {
+    min-height: 140px;
+    resize: none;
+ }
+
+ .form-img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 200px;
+    max-width: 400px;
+    order:2;
+ }
+
+
+ .form-img img{
+    width: 90%;
+    margin: auto;
+    
+ }
+
+ .form input[type="submit"]{
+    background-color: rgb(27, 57, 93);
+    color: rgb(255, 255, 255);
+    border-bottom: none;
+    padding:12px;
+    
+}
+
+.form input[type="submit"]:hover{
+    background-color: rgb(42, 75, 115);
+    color: rgb(255, 255, 255);
+    border-bottom: none;
+    padding:12px;
+    
+}
+
+.form input[type="submit"]:focus{
+    background-color: rgb(27, 57, 93);
+}
+
+.form input[type="submit"]:active{
+    background:linear-gradient(to bottom, rgb(42, 75, 115), #1a3454 ) ;
+}
+
+ 
+ 
